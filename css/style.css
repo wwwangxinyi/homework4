@@ -51,7 +51,7 @@ nav a:focus {
 
   /*Your code here*/
   position: absolute;
-  margin-top: -40px;
+  top: -40px;
 }
 
 /*Your Code Here*/
@@ -59,7 +59,7 @@ nav a:focus {
 
 .skip a:focus {
   position: absolute;
-  margin: 0px;
+  top: 0px;
 }
 
 /*Your Code Here*/
@@ -88,7 +88,7 @@ footer {
   /*Your Code Here*/
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-row-gap: 15px;
 }
 
@@ -128,7 +128,6 @@ header p {
 .contact {
   /*Your Code Here*/
   grid-column: 2/3;
-  grid-row: auto/span 1;
 }
 
 .about-image,
@@ -139,7 +138,6 @@ header p {
   grid-column: 1/-1;
   max-height: 700px;
   overflow: hidden;
-  grid-row: auto/span 1;
 }
 
 .about,
