@@ -83,14 +83,14 @@ footer {
 }
 
 
-
 .container {
   /*Your Code Here*/
   display: grid;
-  -webkit-grid-template-columns: 1fr 5fr 1fr;
+  /* -webkit-grid-template-columns: 1fr 5fr 1fr; */
   grid-template-columns: 1fr 5fr 1fr;
   grid-template-rows: auto auto auto auto auto;
   grid-row-gap: 15px;
+  overflow: hidden;
 }
 
 header {
@@ -109,10 +109,10 @@ header {
   /*Your Code Here*/
   /*Set background-image to header.jpg */
   background-image: url('../images/header.jpg');
-
+  overflow: hidden;
   grid-column: 1 / -1;
   /*Can you explain what this does?*/
-  grid-row: 1 / auto;
+  grid-row: 1 / 2;
   /*Can you rewrite it?*/
 }
 
@@ -128,7 +128,7 @@ header p {
 .clients,
 .contact {
   /*Your Code Here*/
-  grid-column: 2/3;
+  grid-column: 2/span 1;
 }
 
 .about-image,
@@ -144,27 +144,27 @@ header p {
 .about,
 .about-image {
   /*Your Code Here*/
-  grid-row: 3/4;
+  grid-row: 2/auto;
 }
 
 .method,
 .method-image {
   /*Your Code Here*/
-  grid-row: 4/5;
+  grid-row: 3/auto;
 }
 
 
 .clients,
 .clients-image {
   /*Your Code Here*/
-  grid-row: 5/6;
+  grid-row: 4/auto;
 }
 
 
 .contact,
 .contact-image {
   /*Your Code Here*/
-  grid-row: 6/7
+  grid-row: 5/auto;
 }
 
 .text-block {
@@ -187,6 +187,7 @@ header p {
 
   .container {
     /*Your code here:*/
+
     display: grid;
     grid-template-rows: 400px 400px 400px 400px 400px;
     grid-template-columns: 50px auto 500px auto 50px;
@@ -231,4 +232,3 @@ preferences to reduce motion.*/
   header {
     background-attachment: initial;
   }
-}
